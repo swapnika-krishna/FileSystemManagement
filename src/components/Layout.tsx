@@ -36,12 +36,12 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* <ParticleBackground /> */}
       
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-950/50">
+      <nav className="sticky top-0 z-50 bg-slate-50 dark:bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="text-xl font-bold tracking-tighter flex items-center gap-2 text-brand dark:text-brand-light">
-                <span className="bg-brand text-white p-1 rounded-lg text-xs px-2 py-1 shadow-md">SSP</span>
+                <span className="bg-brand text-white p-1 rounded-lg text-xs px-2 py-1">SSP</span>
                 <span className="hidden sm:inline">Secondary Storage Protocol</span>
               </Link>
             </div>
@@ -55,7 +55,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                         className={cn(
                           "px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2",
                           location.pathname === item.path
-                            ? "bg-brand text-white shadow-lg shadow-brand/20"
+                            ? "bg-brand text-white"
                             : "text-slate-600 dark:text-slate-400 hover:bg-brand/20 dark:hover:bg-brand/10 hover:text-brand-700 dark:hover:text-brand"
                         )}
                       >

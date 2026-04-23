@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #28396C;
+  --color-brand-600: #3D528E;
+  --color-brand-700: #28396C;
+  --color-brand-dark: #1A264D;
+  --color-brand-light: #94A3B8; /* Slate-400 for better dark mode text visibility */
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-emerald-600 dark:text-emerald-400;
+  }
+}
